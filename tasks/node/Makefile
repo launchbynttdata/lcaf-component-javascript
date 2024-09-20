@@ -9,3 +9,7 @@ test::
 .PHONY: build
 build::
 	@npm run build
+
+.PHONY: publish
+publish::
+	@npm publish
