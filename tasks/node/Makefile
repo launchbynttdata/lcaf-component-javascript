@@ -7,12 +7,12 @@ install::
 	@npm --prefix $(SOURCE_FOLDER) install
 
 .PHONY: test
-test::
+test:: install
 	@echo "Running test target"
 	@npm --prefix $(SOURCE_FOLDER) run test 
 
 .PHONY: build
-build::
+build:: install
 	@echo "Running build target"
 	@npm --prefix $(SOURCE_FOLDER) run build 
 
